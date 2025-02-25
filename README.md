@@ -1,3 +1,5 @@
+![Captura de tela de 2025-02-25 11-00-05](https://github.com/user-attachments/assets/acd3ebda-cfa0-4e74-817b-c9e68eeb0413)
+
 # Teste de Velocidade de Digitação
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
