@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste de Velocidade de Digitação</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Teste de Velocidade de Digitação</h1>
+            <p>Digite o texto abaixo o mais rápido possível:</p>
+            <div id="text-to-type">{{ random_text }}</div>
+            <textarea id="user-input" placeholder="Comece a digitar aqui..."></textarea>
+            <div class="results">
+                <p>Tempo: <span id="timer">0s</span></p>
+                <p>Velocidade: <span id="wpm">0</span> WPM</p>
+                <p>Erros: <span id="errors">0</span></p>
+            </div>
+            <canvas id="progress-chart" width="400" height="200"></canvas>
+            <button id="restart-btn">Reiniciar Teste</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
